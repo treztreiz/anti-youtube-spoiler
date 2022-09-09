@@ -14,3 +14,13 @@ body.anti-spoil-enabled .ytp-chapter-container,
 body.anti-spoil-enabled ytd-thumbnail-overlay-time-status-renderer {
     display: none;
 }
+
+body.anti-spoil-enabled .ytp-custom-button {
+    text-align: center;
+}
+
+/* body.anti-spoil-enabled .ytd-comments ytd-comment-thread-renderer, 
+body.anti-spoil-enabled .ytd-comments #continuations,
+body.anti-spoil-enabled .ytd-comments #spinner-container {
+    display: none!important;
+} */
