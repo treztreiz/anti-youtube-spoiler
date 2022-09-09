@@ -2,7 +2,7 @@
     "author": "Mathias Hoarau",
     "name": "Anti Youtube™ Spoiler",
     "version": "0.1.0",
-    "description": "Prevent spoiler by removing the progress bar and video duration from the Youtube™ player.",
+    "description": "Prevent spoilers by removing the progress bar and video duration from the Youtube™ player.",
     "permissions": ["storage", "tabs"],
     "host_permissions": ["https://*.youtube.com/*"],
     "background": {
