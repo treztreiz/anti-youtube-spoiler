@@ -1,0 +1,16 @@
+body #player {
+    opacity: 0;
+}
+
+body.anti-spoil-enabled #player,
+body.anti-spoil-disabled #player {
+    opacity: 1;
+}
+
+body.anti-spoil-enabled .ytp-progress-bar-container,
+body.anti-spoil-enabled .ytp-time-separator,
+body.anti-spoil-enabled .ytp-time-duration,
+body.anti-spoil-enabled .ytp-chapter-container,
+body.anti-spoil-enabled ytd-thumbnail-overlay-time-status-renderer {
+    display: none;
+}
