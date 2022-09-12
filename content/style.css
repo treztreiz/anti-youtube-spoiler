@@ -19,8 +19,6 @@ body.anti-spoil-enabled .ytp-custom-button {
     text-align: center;
 }
 
-/* body.anti-spoil-enabled .ytd-comments ytd-comment-thread-renderer, 
-body.anti-spoil-enabled .ytd-comments #continuations,
-body.anti-spoil-enabled .ytd-comments #spinner-container {
-    display: none!important;
-} */
+body.anti-spoil-disabled .ytp-custom-button {
+    display: none;
+}
