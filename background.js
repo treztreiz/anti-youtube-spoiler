@@ -8,3 +8,6 @@ chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ whiteList })
 })
 
+chrome.tabs.onUpdated.addListener((tabId, tab) => {
+    chrome.tabs.sendMessage(tabId, { type: "NEW" })
+})

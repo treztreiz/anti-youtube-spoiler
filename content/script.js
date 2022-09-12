@@ -42,13 +42,15 @@
     }
 
     // Initialize
-    chrome.storage.sync.get(['enabled', 'onlyWhiteList', 'whiteList'], ({enabled, onlyWhiteList, whiteList}) => {
-        ENABLED = enabled
-        ONLY_WHITE_LIST = onlyWhiteList
-        WHITE_LIST = whiteList
-
-        updateAntiSpoil()
-    })
+    const initExtension = () => {
+        chrome.storage.sync.get(['enabled', 'onlyWhiteList', 'whiteList'], ({enabled, onlyWhiteList, whiteList}) => {
+            ENABLED = enabled
+            ONLY_WHITE_LIST = onlyWhiteList
+            WHITE_LIST = whiteList
+    
+            updateAntiSpoil()
+        })
+    }
 
     // Listen to changes
     chrome.storage.onChanged.addListener((changes) => {
@@ -73,6 +75,8 @@
             const creator = {name: name, url: url, img: img}
 
             sendResponse(creator)
+        } else if(request.type === "NEW") {
+            initExtension()
         }
     })
 
