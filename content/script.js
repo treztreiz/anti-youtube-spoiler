@@ -57,8 +57,6 @@
             if ('onlyWhiteList' in changes) ONLY_WHITE_LIST = changes.onlyWhiteList.newValue
             if ('whiteList' in changes) WHITE_LIST = changes.whiteList.newValue
 
-            console.log(changes)
-
             updateAntiSpoil()
         } 
     })
@@ -110,7 +108,5 @@
     }
 
 })()
-
-console.log('ok')
 
 document.body.classList.add('anti-spoil-enabled')

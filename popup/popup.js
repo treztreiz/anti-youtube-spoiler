@@ -39,7 +39,6 @@ function updateWhiteList() {
         }
     
         for (let creator of creators) {
-            console.log(creator)
             whiteListContainer.innerHTML += `<li class="list-group-item d-flex align-items-center"><img class="img-fluid me-2 avatar" src="${creator.img}"><span style="flex: 1">${creator.name}</span><button class="btn-close" data-id="${creator.url}"></button></li>`
         }
     
